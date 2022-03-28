@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Math.random
+        </title>
+    </head>
+    <body>
+        
+        <h1 id="date"></h1>
+        <h2 id='message'></h2>
+        <script>
+            //random number generater
+            let ran= Math.floor(Math.random()*(20-10+1)+10);
+            document.write(ran);
+            //date and time 
+var time = new Date();
+var show= time.getTimezoneOffset();
+document.write(show);
+
+var today= new Date();
+var year= today.getTime(); 
+var est= new Date('Apr 16, 2000  15:45:55');
+ var difference= year - est.getTime();
+  difference= (difference/ 31556900000); 
+var elMsg = document.getElementById('message'); 
+elMsg.textContent = Math.floor(difference) + ' years of online travel advice'; 
+        </script>
+    </body>
+</html>

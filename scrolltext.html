@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css and bootsarap\bootstrap.css" type='text/css'>
+    <link rel="stylesheet" href="css and bootsarap\scrooltext.css" type='text/css'>
+    <title>Scrool Demo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id='img1'>
+                <img class='img-responsive' src="G:\Win 10\new_york_house_snow_street_4k_hd_travel.jpg" alt="image">
+            </div>
+       </div>
+       <div class="row" id="datails">
+           <h1>Famous City Picture and Details</h1>
+           <div class="w-100"></div>
+           <div class="col-md" id='tranform'><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum a odit accusantium, iure, fugiat quo ducimus nobis reiciendis itaque quae natus assumenda dignissimos nemo obcaecati quia laboriosam, veritatis commodi dolorum! Nesciunt sunt id deserunt, officia quibusdam laudantium et alias sit unde obcaecati? Suscipit magni, placeat unde harum explicabo quia qui?</b> 
+           </div>
+           <div class="col-md ">
+            <div id='img1'><img src="G:\Win 10\new_york_house_snow_street_4k_hd_travel.jpg" alt="G:\Win 10\new_york_house_snow_street_4k_hd_travel.jpg"></div>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
+<script>
+    function scrooltext()
+    {
+        var display=document.getElementById('tranform');
+        var height=window.innerHeight*.8;
+        var tranformHeigth = display.getBoundingClientRect().top;
+        if(tranformHeigth < height)
+        {
+            display.setAttribute('id','intro-apper')
+  }
+    }
+    window.addEventListener('scroll',scrooltext);
+</script>

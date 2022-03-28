@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css and bootsarap\bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css and bootsarap\all.css" >
+    <link rel="stylesheet" href="css and bootsarap\dropmenu.css" type="text/css">
+    <title>Drop Menu</title>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="row not-active2" id="list2">
+
+            </div>
+        <div class="row">
+            <div class="col">
+                Heading
+            </div>
+            <div class="col"> 
+                <button id="btn" class='button'><i class="fas fa-lightbulb"></i></button>          
+            </div>
+        </div>
+        <div class="row">
+            <div class="col not-active1" id="list1">sdsd</div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+function showdata2()
+{
+    var show=document.getElementById("list2");
+    show.innerHTML='<a href="">Home</a><a href="">contant us </a><a href="">aboutUs</a>';
+    show.classList.toggle("active2");
+}
+   function showdata1()
+   {
+    var show=document.getElementById("list1");
+    show.innerHTML='<a href="">Home</a><a href="">contant us </a><a href="">aboutUs</a>';
+    show.classList.toggle("active1");
+   }
+var el=document.getElementById("btn");
+el.addEventListener("click",showdata1,false);
+
+    el.addEventListener("click",showdata2,false);
+</script>
